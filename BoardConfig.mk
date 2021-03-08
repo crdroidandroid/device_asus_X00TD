@@ -1,11 +1,14 @@
 #
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2020 The dotOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 # Inherit from sdm660-common
 include device/asus/sdm660-common/BoardConfigCommon.mk
+
+# Inherit from ZenParts
+include packages/apps/ZenParts/BoardConfigZen.mk
 
 DEVICE_PATH := device/asus/X00TD
 
@@ -20,7 +23,7 @@ TARGET_BOOTLOADER_BOARD_NAME := sdm636
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG := X00TD_defconfig
+TARGET_KERNEL_CONFIG := electroperf_defconfig
 
 # Inherit the proprietary files
 include vendor/asus/X00TD/BoardConfigVendor.mk
