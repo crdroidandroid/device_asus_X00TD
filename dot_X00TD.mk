@@ -18,6 +18,18 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # Official dotOS
 DOT_OFFICIAL := true
 
+# Gapps Configs..
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_WIFI_EXT := true
+IS_PHONE := true
+#WITH_GAPPS=true
+
+# Gapps  Features
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_PIXEL_CHARGER := true
+
 # ZenParts
 $(call inherit-product-if-exists, packages/apps/ZenParts/zenparts.mk)
 
