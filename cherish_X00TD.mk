@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The dotOS Project
+# Copyright (C) 2020 The cherishOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -9,20 +9,25 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common dotOS stuff
-$(call inherit-product, vendor/dot/config/common.mk)
+# Inherit some common cherishOS stuff
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Official dotOS
-DOT_OFFICIAL := true
+# Official 
+CHERISH_BUILD_TYPE:= OFFICIAL
+
+# Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.cherish.maintainer=Ken_kaneki_69
 
 # Gapps Configs..
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_WIFI_EXT := true
 IS_PHONE := true
 #WITH_GAPPS=true
+CHERISH_NONGAPPS=true
 
 # Gapps  Features
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
@@ -40,7 +45,7 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := dot_X00TD
+PRODUCT_NAME := cherish_X00TD
 PRODUCT_DEVICE := X00TD
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := Zenfone Max Pro M1

@@ -1,11 +1,11 @@
 #
-# Copyright (C) 2020 The dotOS Project
+# Copyright (C) 2020 The cherishOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/dot_X00TD.mk
+    $(LOCAL_DIR)/cherish_X00TD.mk
 
 COMMON_LUNCH_CHOICES := \
-    dot_X00TD-userdebug
+    cherish_X00TD-userdebug
