@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The octaviOS Project
+# Copyright (C) 2020 The lineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -9,29 +9,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common octaviOS stuff
-$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
+# Inherit some common lineageOS stuff
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
-
-# Official 
-OCTAVI_BUILD_TYPE := Official
-
-# Maintainer
-OCTAVI_DEVICE_MAINTAINER := Ken_kaneki_69
-
-# Gapps Configs..
-TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_WIFI_EXT := true
-IS_PHONE := true
-#WITH_GAPPS=true
-
-# Gapps  Features
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_INCLUDE_PIXEL_CHARGER := true
 
 # ZenParts
 $(call inherit-product-if-exists, packages/apps/ZenParts/zenparts.mk)
@@ -43,7 +25,7 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := octavi_X00TD
+PRODUCT_NAME := lineage_X00TD
 PRODUCT_DEVICE := X00TD
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := Zenfone Max Pro M1
