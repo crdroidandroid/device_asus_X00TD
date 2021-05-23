@@ -40,6 +40,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Build fingerprint
 BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ2A.210505.003/7255357:user/release-keys"
-
-# Allow Dependencies 
-ALLOW_MISSING_DEPENDENCIES=true

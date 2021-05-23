@@ -1,24 +1,24 @@
 [
   {
-    "repository" : "dhimanparas20/device_asus_X00TD",
+    "repository" : "dhimanparas20/dt",
     "target_path": "device/asus/X00TD",
     "branch"     : "cr",
     "remote"     : "github"
   },
   {
-    "repository" : "dhimanparas20/device_asus_sdm660-common",
+    "repository" : "dhimanparas20/cdt",
     "target_path": "device/asus/sdm660-common",
     "branch"     : "11",
     "remote"     : "github"
   },
   {
-    "repository" : "ElectroPerf/android_kernel_asus_sdm660",
+    "repository" : "ElectroPerf/android_kernel_asus_sdm660-LTO",
     "target_path": "kernel/asus/sdm660",
-    "branch"     : "CAF-P-WIFI-STABLE",
+    "branch"     : "X00TD-P-WIFI-STABLE",
     "remote"     : "github"
   },
   {
-    "repository" : "dhimanparas20/vendor_asus_X00TD",
+    "repository" : "dhimanparas20/nvt",
     "target_path": "vendor/asus",
     "branch"     : "11"
     "remote"     : "github"
