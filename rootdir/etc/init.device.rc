@@ -56,3 +56,11 @@ on boot
     chown system system /sys/class/sensors/stk3x1x-light/sensors_name
 
     chown radio radio sys/module/stk3x1x/parameters/call_status_flag
+
+    # Permissions for Double Tap To Wake Gesture Node
+    chown system system /sys/kernel/touchpanel/gesture_node
+    chmod 0664 /sys/kernel/touchpanel/gesture_node
+
+# Start Double Tap To Wake Gesture Node
+on property:sys.boot_completed=1
+    write /sys/kernel/touchpanel/gesture_node 1
