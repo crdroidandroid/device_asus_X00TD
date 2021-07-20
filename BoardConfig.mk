@@ -23,7 +23,7 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 TARGET_TAP_TO_WAKE_NODE := "/sys/kernel/touchpanel/gesture_node"
 
 # Kernel
-TARGET_KERNEL_CONFIG := electroperf_defconfig
+TARGET_KERNEL_CONFIG := X00TD_defconfig
 
 # Inherit the proprietary files
 include vendor/asus/X00TD/BoardConfigVendor.mk
