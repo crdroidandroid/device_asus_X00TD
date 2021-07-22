@@ -36,4 +36,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="redfin-user 11 RQ3A.210705.005 7349499 release-keys"
 
 # Build fingerprint
-BUILD_FINGERPRINT := google/redfin/redfin:11/RQ3A.210705.005/7349499:user/release-keys"
+BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ3A.210705.005/7349499:user/release-keys"

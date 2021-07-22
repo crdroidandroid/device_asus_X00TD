@@ -1,14 +1,14 @@
 [
   {
-    "repository" : "dhimanparas20/dt",
+    "repository" : "dhimanparas20/device_asus_X00TD",
     "target_path": "device/asus/X00TD",
     "branch"     : "cr",
     "remote"     : "github"
   },
   {
-    "repository" : "dhimanparas20/cdt",
+    "repository" : "dhimanparas20/device_asus_sdm660-common",
     "target_path": "device/asus/sdm660-common",
-    "branch"     : "t2",
+    "branch"     : "main",
     "remote"     : "github"
   },
   {
@@ -18,9 +18,9 @@
     "remote"     : "github"
   },
   {
-    "repository" : "dhimanparas20/nvt",
+    "repository" : "dhimanparas20/vendor_asus",
     "target_path": "vendor/asus",
-    "branch"     : "test"
+    "branch"     : "11"
     "remote"     : "github"
   }
 ]
