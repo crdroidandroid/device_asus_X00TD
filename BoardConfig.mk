@@ -19,9 +19,6 @@ TARGET_BOOTLOADER_BOARD_NAME := sdm636
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
-# Double Tap To Wake Node
-TARGET_TAP_TO_WAKE_NODE := "/sys/kernel/touchpanel/gesture_node"
-
 # Kernel
 TARGET_KERNEL_CONFIG := X00TD_defconfig
 
