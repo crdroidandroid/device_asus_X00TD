@@ -24,6 +24,9 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 # Ignore Neverallows on USER build
 SELINUX_IGNORE_NEVERALLOWS_ON_USER := true
 
+# Reduce system image size by limiting java debug info.
+PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+
 # Gapps 
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_WIFI_EXT := true
